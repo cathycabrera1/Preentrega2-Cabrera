@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+/* GRILLA CON GRID AREAS DEL INDEX*/
+#grilla__index{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main testimonios"
+    "footer footer footer footer";
+    grid-template-columns: 2fr 4fr 5fr 1fr;
+}
+
+/* MEDIA QUERIES INDEX*/
+@media screen  and (max-width: 970px) {
+        #grilla__index{
+            grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main main"
+            "testimonios testimonios"
+            "footer footer";
+            grid-template-columns: 4fr 4fr;
+        }
+    
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+.testimonios{
+    grid-area: testimonios;
+    background-color: #5b2046;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* HEADER */
+.imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+/* MEDIA QUERIES HEADER */
+
+@media screen  and (max-width: 768px) {
+    .imagen{
+        display:flex;
+        flex-direction: column;
+    }
+    }
+
+
+
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 798%;
+    font-weight: 805;
+    color: hwb(274 2% 72%);
+    text-decoration: underline;
+    background-color: white;
+
+}
+
+/* MEDIA QUERIES TITULO */
+
+@media screen  and (max-width: 998px) {
+    .titulo{
+        font-size: 500%;
+        
+    }
+    }
+
+.subtitulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 400%;
+    font-weight: 400;
+    color: rgb(15, 14, 15);
+    text-align: end;
+}
+
+/* MEDIA QUERIES SUBTITULO */
+
+@media screen  and (max-width: 970px) {
+    .subtitulo{
+        font-size: 200%;
+        text-align: center;
+        
+    }
+    }
+
+.logo{
+    max-width: 100%;
+    width: 15rem;
+    height: 15rem;
+    
+}
+
+/* FONDOS */
+.fondo {
+    max-width: 100%;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+
+.fondoindex {
+    background-image: url(../img/fondonuevo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.fondo__galeria {
+    background-image: url(../img/fondonuevo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.fondo__contacto {
+    background-image: url(../img/fondoindex1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.fondo__ubicacion {
+    background-image: url(../img/fondoindex1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+/* INDEX */
+.titulo-index {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 400%;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(74, 15, 101);
+    margin-top: 5rem;
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES TITULO INDEX */
+
+@media screen  and (max-width: 768px) {
+    .titulo-index{
+        font-size: 200%;
+        text-align: center;
+        
+    }
+    }
+/* STAFF */
+.staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.staff img{
+    max-width: 100%;
+    width: 25rem;
+    height: 18rem;
+    margin-top: 1rem;
+    transition: all 2s;
+    }
+
+.staff img:hover {
+    width: 40rem;
+    height: 28rem;
+
+}
+.staff p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    font-weight: bolder;
+    color: rgb(32, 2, 32);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 16rem;
+    margin-left: 16rem;
+    background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    rgb(241, 239, 240) 0%,
+    rgb(194, 116, 165) 100%
+        );
+    
+}
+/* MEDIA QUERIES STAFF */
+
+@media screen  and (max-width: 768px) {
+    .staff p{
+        margin-right: 10rem;
+        margin-left: 10rem;
+        
+    }
+    }
+
+/* EQUIPO */
+
+.equipo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.equipo__personal{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border: solid 1rem rgb(24, 1, 10);
+    border-width: 1rem;
+    width: 20rem;
+    height: 13rem;
+    background-color: #f7ddee;
+    text-decoration: underline;
+    transition: all 3s;
+}
+
+.equipo__personal img:hover{
+    width: 12rem;
+    height: 16;
+}
+
+.equipo__personal img{
+    max-width: 100%;
+    width: 6rem;
+    height: 8rem;
+    
+}
+
+/* MEDIA QUERIES  EQUIPO*/
+
+@media screen  and (max-width: 970px) {
+    .equipo{
+        display:flex;
+        flex-direction: column;
+    }
+    }
+
+/* SIGNIFICADO DE LAS UÑAS*/
+.informacion {
+    font-family: 'Roboto', sans-serif;
+    font-size: 300%;
+    font-style: normal;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10rem;
+    color:rgb(74, 15, 101) ;
+}
+
+.informacion__descripcion {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 16rem;
+    margin-left: 16rem;
+    text-align: center;
+    color: hsl(304, 83%, 7%);
+    background-image: radial-gradient(
+          farthest-corner at 40px 40px,
+          rgb(241, 239, 240) 0%,
+          rgb(194, 116, 165) 100%
+        );
+}
+
+/* MEDIA QUERIES INFORMACION*/
+
+@media screen  and (max-width: 768px) {
+    .informacion{
+        font-size: 200%;
+    }
+    }
+@media screen  and (max-width: 768px) {
+    .informacion__descripcion{
+        margin-right: 10rem;
+        margin-left: 5rem;
+        font-size: 150%;
+    }
+    }
+
+/* OPCIONES PARA UÑAS */
+.opciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+        
+}
+.card__opcion{
+    font-family: 'Roboto', sans-serif;
+    border: solid 0.2rem rgb(24, 1, 10);
+    border-width: 2rem;
+    width: 25rem;
+    background-color: #54063f;
+    margin-bottom: 3rem;
+}
+
+.card__parrafo{
+    text-align: center;
+    font-size: 200%;
+    color: aliceblue;
+ }
+.card__img{
+    max-width: 100%;
+    height: 20rem;
+    width: 40rem;
+}
+
+.posibilidades {
+    font-family: 'Roboto', sans-serif;
+    font-size: 300%;
+    font-style: normal;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10rem;
+    color: rgb(74, 15, 101);
+}
+/* MEDIA QUERIES OPCIONES*/
+
+
+
+@media screen  and (max-width: 970px){
+    .posibilidades{
+        font-size: 180%;
+    }
+ }
+
+ @media screen  and (max-width: 1359px){
+    .opciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+            
+    
+    }
+ }
+
+ @media screen  and (max-width: 970px) {
+    .opciones{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+        
+    }
+    }
+/* TESTIMONIOS CLIENTAS*/
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+       
+}
+
+.contenedores-testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.testimonios img{
+    max-width: 100%;
+    height: 5rem;
+    width: 4rem;
+}
+
+.testimonios p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgb(253, 247, 252);
+    text-align: center;
+
+}
+
+/* MEDIA QUERIES TESTIMONIOS*/
+
+@media screen  and (max-width: 970px) {
+    .testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+        }
+     }
+     
+@media screen  and (max-width: 970px) {
+        .contenedores-testimonios{
+        margin-right: 7rem;
+            }
+         }
+
+ 
+/* GALERIA*/
+#carouselExampleControls{
+    width: 50%;
+    margin: 0 auto;
+}
+.galeria {
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+    color: rgb(56, 5, 46);
+}
+
+.lista__galeria{
+    font-size: 250%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(246, 247, 247);
+}
+
+.lista__manos{
+    font-weight: 700;
+}
+
+.lista__depilacion{     
+    font-weight: 700;
+}
+
+
+.galeria__video{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.clientas {
+    font-size: 300%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+.clientas__video {
+    max-width: 100%;
+    width: 30rem;
+    height: 30rem;
+}
+
+
+table {
+    border-color: black;
+    margin-left: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    font-size: 200%;
+    font-weight: 900;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    border: 20rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 6rem;
+    border-width: 10rem;
+    border-color: blueviolet;
+    color: rgb(104, 40, 165);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 100%;
+
+}
+
+.formulario {
+    margin-top: 10rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(104, 40, 165);
+    font-size: 290%;
+}
+
+.formulario__relleno {
+    margin-top: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(104, 40, 165);
+    font-size: 300%;
+}
+
+.promociones {
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.boton {
+
+    background-color: beige;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    padding: 1 rem 2rem;
+    text-align: center;
+    margin-left: 6rem;
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ubicacion__titulo {
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 500%;
+    font-style: oblique;
+}
+
+.ubicacion__mapa {
+    max-width: 100%;
+}
+
+.ubicacion__direccion {
+    text-align: center;
+    font-size: 250%;
+    font-style: oblique;
+}
+
+.ubicacion__pais {
+    text-align: center;
+    font-size: 250%;
+    font-style: oblique;
+}
+
+.ubicacion__telefono {
+    text-align: center;
+    font-size: 250%;
+    font-style: oblique;
+}
+
+
+
+footer {
+    background: linear-gradient(hwb(180 97% 2%), hsl(316, 83%, 16%));
+    height: 7rem;
+}
+
+
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.redes__parrafo{
+    font-size: 150%;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.icono {
+    max-width: 100%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer__parrafo {
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: rgb(247, 246, 248);
+    text-align: end;
+}
+
+/* GALERIA*/
+@media screen  and (max-width: 970px) {
+   .footer{
+    height: 12rem;
+   }
+
+   .icono{
+    width: 1rem;
+    height: 1rem;
+   }
+   
+   .footer__parrafo{
+    text-align: center;
+    margin-top: 2rem;
+   }
+
+    .redes{
+    display: flex;
+    flex-direction: column;
+   
+        }
+      .redes__parrafo{
+        font-size: 70%;
+        font-style: normal;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+    }
+    
+  }
