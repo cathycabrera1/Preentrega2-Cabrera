@@ -96,6 +96,19 @@ footer{
     }
     }
 
+@media screen  and (max-width: 450px) {
+        .titulo{
+            font-size: 300%;
+            
+        }
+        }
+
+@media screen  and (max-width: 265px) {
+            .titulo{
+                font-size: 150%;
+                
+            }
+            }
 .subtitulo{
     font-family: 'Times New Roman', Times, serif;
     font-size: 400%;
@@ -114,6 +127,13 @@ footer{
     }
     }
 
+    @media screen  and (max-width: 265px) {
+        .subtitulo{
+            font-size: 100%;
+            text-align: center;
+            
+        }
+        }
 .logo{
     max-width: 100%;
     width: 15rem;
@@ -229,6 +249,15 @@ footer{
 
 /* EQUIPO */
 
+.titulo-equipo{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 400%;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(74, 15, 101);
+    text-decoration: underline;
+}
 .equipo{
     display: flex;
     flex-direction: row;
@@ -238,37 +267,37 @@ footer{
 }
 
 .equipo__personal{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    border: solid 1rem rgb(24, 1, 10);
-    border-width: 1rem;
-    width: 20rem;
-    height: 13rem;
-    background-color: #f7ddee;
-    text-decoration: underline;
-    transition: all 3s;
-}
-
-.equipo__personal img:hover{
-    width: 12rem;
-    height: 16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .equipo__personal img{
-    max-width: 100%;
-    width: 6rem;
-    height: 8rem;
-    
+    height: 20rem;
+    width: 15rem;
 }
 
+.equipo__personal p{
+    text-align: center;
+    font-size: 180%;
+    font-weight: 500;
+    color: #54063f;
+}
 /* MEDIA QUERIES  EQUIPO*/
 
-@media screen  and (max-width: 970px) {
+@media screen and (max-width: 1275){
+       
     .equipo{
-        display:flex;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    }
+
+}
+    
+
 
 /* SIGNIFICADO DE LAS UÑAS*/
 .informacion {
@@ -312,6 +341,18 @@ footer{
     }
     }
 
+ @media screen  and (max-width: 245px) {
+        .informacion{
+            font-size: 120%;
+        }
+        }
+@media screen  and (max-width: 245px) {
+        .informacion__descripcion{
+            margin-right: 5rem;
+            margin-left: 2rem;
+            font-size: 120%;
+        }
+        }
 /* OPCIONES PARA UÑAS */
 .opciones{
     display: grid;
