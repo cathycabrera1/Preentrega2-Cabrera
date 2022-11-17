@@ -86,7 +86,15 @@ footer{
     }
     }
 
-
+    @media screen  and (max-width: 320px) {
+        .imagen{
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        }
+    
 
 
 .titulo{
@@ -140,7 +148,7 @@ footer{
     }
     }
 
-    @media screen  and (max-width: 265px) {
+    @media screen  and (max-width: 320px) {
         .subtitulo{
             font-size: 100%;
             text-align: center;
@@ -173,7 +181,7 @@ footer{
     .fondoindex{
         background-image: url(../img/fondonuevo.jpg);
         background-attachment: fixed;
-        background-repeat: repeat;
+        background-repeat:repeat ;
     }
     
 }
@@ -221,6 +229,14 @@ footer{
         
     }
     }
+
+@media screen  and (max-width: 320px) {
+        .titulo-index{
+            font-size: 100%;
+            text-align: start;
+            
+        }
+        }
 /* STAFF */
 .staff{
     display: flex;
@@ -270,6 +286,38 @@ footer{
     }
     }
 
+    @media screen  and (max-width: 320px) {
+        .staff{
+            justify-content: flex-start;
+            align-items: center;
+         }
+        
+        .staff img{
+    max-width: 100%;
+    width: 10rem;
+    height: 12rem;
+    margin-top: 1rem;
+    
+    }
+        
+    .staff p {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 100%;
+        font-weight: bolder;
+        color: rgb(32, 2, 32);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        background-image: radial-gradient(
+        farthest-corner at 40px 40px,
+        rgb(241, 239, 240) 0%,
+        rgb(194, 116, 165) 100%
+            );
+        
+    }
+        }
+    
+
 /* EQUIPO */
 
 .titulo-equipo{
@@ -317,8 +365,33 @@ footer{
     }
     }
 
-
+    @media screen  and (max-width: 320px) {
+        .equipo {
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .titulo-equipo{
+            font-size: 100%;
+            
+        }
+        .equipo__personal img{
+            height: 8rem;
+            width: 5rem;
+        }
+        .equipo__personal p{
+            font-size: 80%;
+        }
+        }
+    
 /* SIGNIFICADO DE LAS UÑAS*/
+
+.contenedor-informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 .informacion {
     font-family: 'Roboto', sans-serif;
     font-size: 300%;
@@ -332,10 +405,6 @@ footer{
 .informacion__descripcion {
     font-family: 'Times New Roman', Times, serif;
     font-size: 300%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-right: 16rem;
-    margin-left: 16rem;
     text-align: center;
     color: hsl(304, 83%, 7%);
     background-image: radial-gradient(
@@ -346,32 +415,27 @@ footer{
 }
 
 /* MEDIA QUERIES INFORMACION*/
-
 @media screen  and (max-width: 768px) {
     .informacion{
         font-size: 200%;
     }
-    }
-@media screen  and (max-width: 768px) {
-    .informacion__descripcion{
+      .informacion__descripcion{
         margin-right: 10rem;
         margin-left: 5rem;
         font-size: 150%;
     }
     }
 
- @media screen  and (max-width: 245px) {
+ @media screen  and (max-width: 320px) {
         .informacion{
-            font-size: 120%;
+            font-size: 60%;
+        }
+                .informacion__descripcion{
+            font-size: 80%;
+            
         }
         }
-@media screen  and (max-width: 245px) {
-        .informacion__descripcion{
-            margin-right: 5rem;
-            margin-left: 2rem;
-            font-size: 120%;
-        }
-        }
+
 /* OPCIONES PARA UÑAS */
 .opciones{
     display: grid;
@@ -415,11 +479,6 @@ footer{
 
 
 
-@media screen  and (max-width: 970px){
-    .posibilidades{
-        font-size: 180%;
-    }
- }
 
  @media screen  and (max-width: 1359px){
     .opciones{
@@ -434,7 +493,11 @@ footer{
     }
  }
 
- @media screen  and (max-width: 970px) {
+ 
+@media screen  and (max-width: 970px){
+    .posibilidades{
+        font-size: 180%;
+    }
     .opciones{
     display: grid;
     grid-template-columns: 1fr;
@@ -445,6 +508,37 @@ footer{
         
     }
     }
+
+@media screen  and (max-width: 320px){
+            .card__opcion{
+            border-width: 1rem;
+            width: 10rem;
+            background-color: #54063f;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        
+        .card__parrafo{
+            text-align: center;
+            font-size: 40%;
+            color: aliceblue;
+         }
+        .card__img{
+            max-width: 100%;
+            height: 5rem;
+            width: 5rem;
+        }
+        
+        .posibilidades {
+          
+            font-size: 60%;
+  
+        }
+
+
 /* TESTIMONIOS CLIENTAS*/
 .testimonios{
     display: flex;
@@ -485,13 +579,35 @@ footer{
     align-content: flex-start;
         }
      }
-     
-@media screen  and (max-width: 970px) {
-        .contenedores-testimonios{
+      .contenedores-testimonios{
         margin-right: 7rem;
             }
-         }
+    
 
+@media screen  and (max-width: 320px) {
+            .testimonios{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: flex-start;
+                }
+             }
+              .contenedores-testimonios{
+                margin-right: 0 auto;
+                    }
+                    .testimonios img{
+                        max-width: 100%;
+                        height: 3rem;
+                        width: 2rem;
+                    }
+                    
+                    .testimonios p{
+                        font-size: 60%;
+                        color: white;
+                        text-align: center;
+                    
+                    }
+                 }
  
 /* GALERIA*/
 #carouselExampleControls{
@@ -685,7 +801,7 @@ footer {
     text-align: center;
 }
 
-/* GALERIA*/
+/* MEDIA QUERIES FOOTER*/
 @media screen  and (max-width: 970px) {
    .footer{
     height: 12rem;
@@ -708,9 +824,32 @@ footer {
         }
       .redes__parrafo{
         font-size: 70%;
-        font-style: normal;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bolder;
+        
     }
     
   }
+  @media screen  and (max-width: 320px) {
+    .footer{
+     height: 12rem;
+    }
+ 
+    .icono{
+     width: 1rem;
+     height: 1rem;
+    }
+    
+    .footer__parrafo{
+     text-align: center;
+     margin-top: 2rem;
+     font-size: 30%;
+    }
+ 
+     .redes{
+     display: flex;
+     flex-direction: column;
+    
+         }
+       .redes__parrafo{
+         font-size: 50%;
+       }
+        }
